@@ -53,7 +53,7 @@ const HomePage = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <header className="bg-gray-800 text-white p-4 text-center">
-        <h1 className="text-2xl font-bold">Aarabdh's Clicks</h1>
+        <h1 className="text-2xl font-bold">Aarabdh&apos;s Clicks</h1>
       </header>
       <main className="flex-1 p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
