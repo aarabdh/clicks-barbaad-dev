@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { X } from "lucide-react";
 import Navbar from './components/NavBar';
 
@@ -63,11 +62,11 @@ const HomePage = () => {
               className="relative aspect-square cursor-pointer group"
               onClick={() => setSelectedImage(image)}
             >
-              <Image
+              <img
                 src={image.src}
                 alt={image.name}
-                fill
-                className="object-cover rounded-lg select-none"
+                className="object-contain select-none w-full h-full" // Forces fill behavior
+                loading="eager" // Ensures high-priority loading
                 draggable={false}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
@@ -96,13 +95,12 @@ const HomePage = () => {
             </button>
 
             <div className="flex-1 relative h-[70vh] md:h-[95vh]">
-              <Image
+              <img
                 src={selectedImage.src}
                 alt={selectedImage.name}
-                fill
-                className="object-contain select-none"
+                className="object-contain select-none w-full h-full" // Forces fill behavior
+                loading="eager" // Ensures high-priority loading
                 sizes="100vw"
-                priority
               />
             </div>
 
