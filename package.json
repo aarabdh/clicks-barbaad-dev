@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "generate-image-list": "node scripts/generate-image-list.js"
   },
   "dependencies": {
