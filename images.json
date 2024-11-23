@@ -1,5 +1,15 @@
 [
   {
+    "name": "Mommy and Baby Drops",
+    "src": "/images/2020-08-10_11-53-17_UTC.jpg",
+    "description": "Credit: my sister (for bearing with me and holding a dropper over the bowl)"
+  },
+  {
+    "name": "Chilled",
+    "src": "/images/2020-10-23_12-26-36_UTC.jpg",
+    "description": ""
+  },
+  {
     "name": "Infinity On Diwali",
     "src": "/images/2020-11-15_15-47-27_UTC_3.jpg",
     "description": ""
@@ -10,9 +20,24 @@
     "description": "Dream of every Photographer."
   },
   {
+    "name": "Ancient",
+    "src": "/images/2021-03-18_09-46-40_UTC.jpg",
+    "description": ""
+  },
+  {
+    "name": "Lights and Shadows",
+    "src": "/images/2021-04-04_08-35-21_UTC.jpg",
+    "description": ""
+  },
+  {
     "name": "Birds on Ganga",
     "src": "/images/2021-04-09_06-45-54_UTC.jpg",
     "description": "A lucky capture of birds flying over a sunrise and the Ganga river."
+  },
+  {
+    "name": "Chulbuli",
+    "src": "/images/2021-07-17_12-27-26_UTC.jpg",
+    "description": ""
   },
   {
     "name": "Jal Mahal",
@@ -25,9 +50,24 @@
     "description": "Kosi filled with food for the Goddess, and the flames that signify that she is a guest underneath the Ganna."
   },
   {
+    "name": "The Stream Not Taken",
+    "src": "/images/2022-02-12_12-57-46_UTC.jpg",
+    "description": ""
+  },
+  {
     "name": "B-Dome, BITS Goa",
     "src": "/images/2022-02-14_08-00-01_UTC.jpg",
     "description": "A regular evening in front of B-Dome, the heart of BITS."
+  },
+  {
+    "name": "Majestic Crow",
+    "src": "/images/2022-09-03_20-28-37_UTC.jpg",
+    "description": ""
+  },
+  {
+    "name": "Mornings at BITS",
+    "src": "/images/2023-02-08_05-11-07_UTC_1.jpg",
+    "description": "Image: 2023-02-08_05-11-07_UTC_1.jpg"
   },
   {
     "name": "Tea and Sunset",
@@ -80,6 +120,11 @@
     "description": ""
   },
   {
+    "name": "Dapper Doggy",
+    "src": "/images/2023-07-21_12-42-21_UTC.jpg",
+    "description": ""
+  },
+  {
     "name": "Speed",
     "src": "/images/2023-09-12_14-38-33_UTC.jpg",
     "description": ""
@@ -110,8 +155,53 @@
     "description": ""
   },
   {
+    "name": "Reflections",
+    "src": "/images/2024-07-29_09-56-03_UTC_1.jpg",
+    "description": ""
+  },
+  {
     "name": "A Sunset of Red and Blue",
     "src": "/images/2024-09-18_17-59-39_UTC_2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Lonesome Boat",
+    "src": "/images/2024-11-22_22-12-32_UTC_1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Clouds",
+    "src": "/images/2024-11-22_22-12-32_UTC_2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Traffic",
+    "src": "/images/2024-11-22_22-12-32_UTC_3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Leaves in Office",
+    "src": "/images/2024-11-22_22-12-32_UTC_4.jpg",
+    "description": ""
+  },
+  {
+    "name": "A Black and White Night",
+    "src": "/images/2024-11-22_22-12-32_UTC_5.jpg",
+    "description": ""
+  },
+  {
+    "name": "Goa?",
+    "src": "/images/2024-11-22_22-12-32_UTC_6.jpg",
+    "description": ""
+  },
+  {
+    "name": "Peaceful Bridge",
+    "src": "/images/2024-11-22_22-12-32_UTC_7.jpg",
+    "description": ""
+  },
+  {
+    "name": "Boat and Sunrise",
+    "src": "/images/2024-11-22_22-12-32_UTC_8.jpg",
     "description": ""
   }
 ]
