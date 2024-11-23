@@ -1,14 +1,9 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { X } from "lucide-react";
 import Navbar from './components/NavBar';
-
-interface ImageProps {
-  name: string;
-  src: string;
-  description?: string;
-}
+import { ImageProps } from './components/types';
+import ImageModal from './components/ImageModal';
 
 const HomePage = () => {
   const [images, setImages] = useState<ImageProps[]>([]);
@@ -56,7 +51,7 @@ const HomePage = () => {
       </header>
       <main className="flex-1 p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {images.map((image) => (
+          {[...images].reverse().map((image) => (
             <div
               key={image.name}
               className="relative aspect-square cursor-pointer group"
@@ -75,50 +70,7 @@ const HomePage = () => {
           ))}
         </div>
       </main>
-
-      {/* Enhanced Modal */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black z-[60] md:bg-black/90 md:p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div 
-            className="relative h-full w-full flex flex-col md:flex-row md:items-center md:max-w-[95vw] md:max-h-[95vh] md:mx-auto"
-            onClick={e => e.stopPropagation()}
-          >
-
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute right-2 top-2 p-2 rounded-full bg-black/50 hover:bg-black/70 z-10 transition-colors"
-            >
-              <X className="h-6 w-6 text-white"/>
-            </button>
-
-            <div className="flex-1 relative h-[70vh] md:h-[95vh]">
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.name}
-                className="object-contain select-none w-full h-full" // Forces fill behavior
-                loading="eager" // Ensures high-priority loading
-                sizes="100vw"
-              />
-            </div>
-
-            {/* Image info */}
-            <div className="bg-white dark:bg-gray-900 p-4 md:w-80 md:h-[95vh] md:overflow-y-auto">
-              <div className="space-y-4">
-                <h2 className="text-xl font-semibold dark:text-white">
-                  {selectedImage.name}
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {selectedImage.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
+      <ImageModal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
       <footer className="bg-gray-800 text-white p-4 text-center">
         <p>&copy; {new Date().getFullYear()} Aarabdh</p>
       </footer>
